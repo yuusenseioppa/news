@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>最新消息</title>
+	{% load static %}
+	<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="warp">
+		<div id="header">
+			{% block login %}{% endblock %}
+			<div class="logo">
+				<img src="{% static "images/DWonline2.png" %}" width="180" height="100" alt="https://sites.google.com/view/yuusensei/home" />
+			</div>
+		</div>
+		<div class="headings">
+		  <h2>News</h2>
+		</div>  
+		{% block content %}{% endblock %}
+		<div id="footer">&copy; Copyright 2024</div>
+	</div>
+</body>
+</html>
